@@ -1,0 +1,57 @@
+body
+{
+    background-color: #F6e5dc;
+    font-family: Verdana;
+    
+}
+#baner
+{
+ 
+    background-color: #2f180c;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+}
+#panel_lewy
+{
+    float: left;
+    width: 60%;
+
+}
+
+#panel_prawy
+{
+    float: left;
+    font-size: 150%;
+    margin: 70px;
+ 
+   
+}
+
+#dol
+{
+    clear:both;
+    background-color:#D0b6a8;
+    text-align: center;
+    padding: 30px;
+   
+}
+footer
+{
+    height: 60px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #2f180c;
+    color: khaki;
+}
+img
+{
+    height: 350px;
+}
+.przycisk
+{
+    margin: 10px;
+    padding: 5px;
+    background-color: #2f180c;
+    color: khaki;
+}

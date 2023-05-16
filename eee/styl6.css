@@ -1,0 +1,39 @@
+#baner1,#baner
+{
+    float: left;
+    background-color: #3cb371;
+    color: white;
+    height: 100px;
+    width: 40%;
+}
+#baner2
+{
+    float: left;
+    background-color: #3cb371;
+    height: 100px;
+    width: 20%;
+}
+body
+{
+    font-family: Georgia;
+}
+footer
+{
+    clear: both;
+    background-color: #3cb371;
+    color: white;
+}
+form
+{
+   margin:30px;
+}
+#dzien
+{
+    background-color: #FFDAB9;
+    width:170px;
+    height: 90px;
+    margin: 5px;
+    border: 1px #3cb371;
+   border-style:solid;
+    float:left
+}
