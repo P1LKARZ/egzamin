@@ -16,7 +16,7 @@ body
 {
     float: left;
     width: 60%;
-
+    font-size: 150%;
 }
 
 #panel_prawy
@@ -39,8 +39,6 @@ body
 footer
 {
     height: 60px;
-    margin: 10px;
-    padding: 5px;
     background-color: #2f180c;
     color: khaki;
 }

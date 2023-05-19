@@ -24,10 +24,10 @@
             Zarezerwuj stolik on-line
         </h2>
         <form action="rezerwacja.php" method="post">
-            <p>"Data (format rrrr-mm-dd)</p><br><input type="date" name="datka">
+            <p>"Data (format rrrr-mm-dd)</p><br><input type="text" name="datka">
             <p>ile osob ?</p><br><input type="number" name="osoby" >
-            <p>Twoj numer telefonu:</p><br><input type="number" name="telefon"><br>
-            <input type="checkbox" name="dane" >Zgadzam sie na przetwarzanie moich danych osobowych<br>
+            <p>Twoj numer telefonu:</p><br><input type="text" name="telefon"><br>
+           <label> <input type="checkbox" name="dane" >Zgadzam sie na przetwarzanie moich danych osobowych</label><br>
             <input type="reset" value="WYCZYŚĆ"class="przycisk">
             <input type="submit" value="REZERWUJ"class="przycisk">
         </form>

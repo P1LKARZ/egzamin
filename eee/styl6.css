@@ -26,6 +26,7 @@ footer
 form
 {
    margin:30px;
+   padding: 30px;
 }
 #dzien
 {
@@ -33,7 +34,11 @@ form
     width:170px;
     height: 90px;
     margin: 5px;
-    border: 1px #3cb371;
-   border-style:solid;
+    border: 1px #3cb371 solid;
+   
     float:left
+}
+#naglowek
+{
+    text-align: right;
 }

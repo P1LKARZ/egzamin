@@ -22,30 +22,32 @@
     </div>
     <div id="dol">
     <?php
-$user="root";
-$serwer="localhost";
-$haslo="";
-$baza="marcel";
-$conn=mysqli_connect($serwer,$user,$haslo,$baza);
-if(mysqli_connect_errno())
-        {
-            echo "BŁĄD POŁĄCZENIA Z BAZĄ";
-        }
-        $data1=$_POST['datka'];
-        $osoby=$_POST['osoby'];
-        $telefon=$_POST['telefon']; 
-        if(isset($data1))
-{
-        $pytanie="INSERT INTO rezerwacja(data1,osoby,telefon) VALUES($data1,$osoby,$telefon)";
- $sql=mysqli_query($conn,$pytanie);
-echo"dodano rezerwacje do bazy";
-}
-else
-{
-    echo "nie dodano rekordu do bazy";
+$user = "root";
+$serwer = "localhost";
+$haslo = "";
+$baza = "marcel";
+$conn = mysqli_connect($serwer, $user, $haslo, $baza);
+if (mysqli_connect_errno()) {
+    echo "BŁĄD POŁĄCZENIA Z BAZĄ";
 }
 
-        ?>
+$data1 = $_POST['datka'];
+$osoby = $_POST['osoby'];
+$telefon = $_POST['telefon'];
+
+$pytanie = "INSERT INTO rezerwacja (data1, osoby, telefon) VALUES ('$data1', '$osoby', '$telefon')";
+
+
+if ($data1!=""&&$osoby!=""&&$telefon!="")
+ {
+    echo "Dodano rezerwację do bazy.";
+    $sql = mysqli_query($conn, $pytanie);
+} else {
+    echo "Nie dodano rekordu do bazy.Wypełnij wszystkie pola";
+}
+
+mysqli_close($conn);
+?>
     </div>
     <footer>
         Strone internetowa opracowal:00000000000
